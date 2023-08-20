@@ -4,3 +4,12 @@
 	height: 100%;
 	position: absolute;
 }
+
+@mixin burger-btn {
+	position: absolute;
+	right: 0;
+	height: 3px;
+	content: '';
+	background-color: $white;
+	transition: width 0.3s;
+}
