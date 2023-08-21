@@ -1,4 +1,4 @@
-@import 'colors', 'components', 'mixin';
+@import 'colors', 'components', 'mixin', 'min', 'mid';
 
 body {
 	font-size: 1.6rem;
@@ -169,6 +169,36 @@ body {
 	&__text {
 		text-align: justify;
 		line-height: 35px;
-		padding: 0 1em;
+		padding: 1em 0;
+	}
+}
+
+.bar {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 20vh;
+	background-image: url(../../dist/img/girl-5785590_1280.jpg);
+	background-size: cover;
+	background-attachment: local;
+	overflow: hidden;
+
+	&__text {
+		position: relative;
+		width: 80%;
+		text-align: center;
+		border: 1px solid $white;
+		padding: 0.7em;
+		color: $white;
+		overflow: hidden;
+		z-index: 1000;
+	}
+	&__shadow {
+		width: 100%;
+		height: 100%;
+		z-index: 1;
+		@include shadow;
 	}
 }

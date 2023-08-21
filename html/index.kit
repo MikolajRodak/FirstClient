@@ -5,6 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forest Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Montserrat:wght@400;700&display=swap"
+        rel="stylesheet">
     <script src="https://kit.fontawesome.com/66bff225cd.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../dist/css/main.mim.css">
 </head>
@@ -18,6 +23,7 @@
     </button>
 
     <!-- @include 'nav.kit' -->
+    <!-- @include 'navdesktop.kit' -->
 
     <header class="header">
         <div class="header__shadow"></div>
@@ -28,28 +34,43 @@
     </header>
 
     <main>
-        <section class="aboutus section section-padding white-section" id="aboutus"></section>
-        <div class="wrapper">
-            <h2 class="section-heading">
-                O nas
-            </h2>
-
-            <img src="../dist/img/waters-3095682_1280.mim.jpg" alt="drzewo na małej wysepce na środku jeziora"
-                class="aboutus__img">
-            <div class="aboutus__texts">
-                <h3 class="aboutus__heading">Niezapomniane przygody</h3>
-                <p class="aboutus__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore eum
-                    omnis
-                    neque
-                    unde praesentium fugiat quis id! Asperiores a fugit dolorum, iste vero tenetur, quo id debitis
-                    exercitationem delectus harum.
-                    Aut expedita quasi nemo adipisci velit cum maiores debitis molestias eligendi iste, ullam
-                    quisquam
-                    tempore eum ex ipsum dolores voluptates nulla perspiciatis error alias in delectus nisi.
-                    Quaerat,
-                    mollitia. mrodak03@gmail.com</p>
+        <section class="aboutus section section-padding white-section" id="aboutus">
+            <div class="wrapper">
+                <h2 class="section-heading">
+                    O nas
+                </h2>
+                <div class="aboutus__content">
+                    <img src="../dist/img/waters-3095682_1280.mim.jpg" alt="drzewo na małej wysepce na środku jeziora"
+                        class="aboutus__img">
+                    <div class="aboutus__texts">
+                        <h3 class="aboutus__heading">Niezapomniane przygody</h3>
+                        <p class="aboutus__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore eum
+                            omnis
+                            neque
+                            unde praesentium fugiat quis id! Asperiores a fugit dolorum, iste vero tenetur, quo id
+                            debitis
+                            exercitationem delectus harum.
+                            Aut expedita quasi nemo adipisci velit cum maiores debitis molestias eligendi iste, ullam
+                            quisquam
+                            mollitia. mrodak03@gmail.com</p>
+                    </div>
+                </div>
             </div>
-        </div>
+        </section>
+
+        <section class="bar">
+            <div class="bar__shadow"></div>
+            <div class="bar__text">
+                <p class="header__text">Przygoda dla całej rodziny</p>
+            </div>
+        </section>
+
+        <section class="aboutus section section-padding white-section" id="offers">
+            <div class="wrapper">
+                <h2 class="section-heading">
+                    Oferta
+                </h2>
+            </div>
         </section>
     </main>
 

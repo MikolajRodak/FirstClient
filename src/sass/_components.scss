@@ -55,3 +55,24 @@
 		transform-origin: left;
 	}
 }
+
+.bar {
+	&__text::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		width: 100%;
+		height: 10vh;
+		background-color: $white;
+		transform: translateX(-200%);
+		transition: transform 0.5s;
+		z-index: -10;
+	}
+	&__text:hover {
+		color: #000;
+		cursor: pointer;
+	}
+	&__text:hover::before {
+		transform: translateX(-50%);
+	}
+}

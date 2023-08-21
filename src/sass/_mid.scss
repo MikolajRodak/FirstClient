@@ -1,0 +1,27 @@
+@media (min-width: 768px) {
+	.navdesktop {
+		&__list {
+			padding-right: 2em;
+		}
+	}
+	.header {
+		background-image: url(../../dist/img/hero_1920.mim.jpg);
+	}
+	// .aboutus {
+	// 	&__content {
+	//         position: relative;
+	// 		display: flex;
+	// 		justify-content: center;
+	// 		align-items: center;
+	// 		img {
+	//             position: absolute;
+	// 			width: 60%;
+
+	// 		}
+	// 	}
+	// 	&__texts {
+	// 		align-self: flex-end;
+	// 		font-size: 18px;
+	// 	}
+	// }
+}
