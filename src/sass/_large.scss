@@ -1,0 +1,50 @@
+@media (min-width: 992px) {
+	.navdesktop {
+		&__list {
+			right: 6em;
+		}
+	}
+	.aboutus {
+		&__content {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 100%;
+			padding: 0 2em;
+			overflow: hidden;
+		}
+
+		&__img {
+			width: 50%;
+			height: 30vh;
+			padding: 0 1em;
+			background-size: cover;
+		}
+		&__text {
+			font-size: 1rem;
+		}
+	}
+
+	.offers {
+		&__boxes {
+			display: flex;
+			justify-content: space-evenly;
+			align-items: center;
+		}
+	}
+
+	.bar {
+		height: 40vh;
+	}
+
+	.contact {
+		.wrapper {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		&__boxes {
+			margin-left: 4.7em;
+		}
+	}
+}

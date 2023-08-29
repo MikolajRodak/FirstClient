@@ -13,7 +13,7 @@
 }
 
 .section-padding {
-	padding: 1em 2em;
+	padding: 3em 2em;
 }
 
 .section-heading {
@@ -74,5 +74,46 @@
 	}
 	&__text:hover::before {
 		transform: translateX(-50%);
+	}
+}
+
+.offers {
+	.one {
+		li:nth-child(n + 3) {
+			color: $light-grey-transparent;
+		}
+	}
+	.two {
+		button {
+			background-color: $green;
+		}
+		li:nth-child(n + 4) {
+			color: $light-grey-transparent;
+		}
+	}
+
+	&__link::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		right: 0%;
+		width: 100%;
+		height: 100%;
+		background-color: $green;
+		transform: translateX(-101%);
+		transition: transform 0.5s;
+		z-index: -10;
+	}
+	&__link:hover {
+		cursor: pointer;
+	}
+
+	&__link:hover a {
+		color: $white;
+		transition-delay: 0.2s;
+		z-index: 1;
+	}
+	&__link:hover::before {
+		transform: translateX(0%);
 	}
 }

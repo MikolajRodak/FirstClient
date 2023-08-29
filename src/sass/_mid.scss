@@ -1,27 +1,76 @@
-@media (min-width: 768px) {
+@media (max-width: 768px) {
 	.navdesktop {
+		display: none;
+	}
+}
+
+@media (min-width: 768px) {
+	.burger-btn {
+		display: none;
+	}
+	.nav {
+		display: none;
+	}
+	.navdesktop {
+		position: sticky;
+		display: flex;
+		width: 100%;
+		height: 10vh;
+		background-color: #fff;
+
+		&__logo {
+			position: absolute;
+			display: flex;
+
+			top: 50%;
+			left: 15%;
+			transform: translate(-50%, -50%);
+			p {
+				padding-left: 0.2em;
+			}
+		}
 		&__list {
-			padding-right: 2em;
+			position: absolute;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			height: 100%;
+			list-style-type: none;
+			right: 3em;
+
+			a {
+				padding: 0.8em;
+				text-decoration: none;
+				font-size: 1.1rem;
+				color: $dark-color;
+			}
+			.first {
+				padding: 3em 1em;
+				background-color: $dark-color;
+			}
 		}
 	}
+
 	.header {
 		background-image: url(../../dist/img/hero_1920.mim.jpg);
+		background-attachment: fixed;
+		background-position: bottom;
 	}
-	// .aboutus {
-	// 	&__content {
-	//         position: relative;
-	// 		display: flex;
-	// 		justify-content: center;
-	// 		align-items: center;
-	// 		img {
-	//             position: absolute;
-	// 			width: 60%;
 
-	// 		}
-	// 	}
-	// 	&__texts {
-	// 		align-self: flex-end;
-	// 		font-size: 18px;
-	// 	}
-	// }
+	.bar {
+		height: 7em;
+		background-image: url(../../dist/img/girl-5785590_1920.jpg);
+		background-size: contain;
+		background-position: center;
+	}
+
+	.contact{
+		&__boxes{
+			display: flex;
+			
+		}
+		&__box{
+			padding-right: 3em;
+		}
+	}
 }
