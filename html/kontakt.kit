@@ -17,7 +17,33 @@
 </head>
 
 <body>
-    <h1>podstrona</h1>
+
+    <!-- @include 'nav.kit' -->
+    <!-- @include 'navdesktop.kit' -->
+
+    <section class="contact pageContact section-padding">
+        <div class="wrapper">
+            <h2 class="section-title">contact <span>us</span></h2>
+
+
+            <form class="contact__form">
+                <div class="contact__form-box">
+                    <label for="name">your mail:</label>
+                    <input type="text" id="name">
+                </div>
+                <div class="contact__form-box">
+                    <label for="mail">Subject:</label>
+                    <input type="mail" id="name">
+                </div>
+                <div class="contact__form-box">
+                    <label for="msg">your message:</label>
+                    <textarea id="msg" cols="30" rows="10"></textarea>
+                </div>
+
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </section>
 </body>
 
 </html>

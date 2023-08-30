@@ -12,16 +12,16 @@
 		display: none;
 	}
 	.navdesktop {
-		position: sticky;
+		position: fixed;
 		display: flex;
 		width: 100%;
 		height: 10vh;
-		background-color: #fff;
+		background-color: $white;
+		z-index: 100000;
 
 		&__logo {
 			position: absolute;
 			display: flex;
-
 			top: 50%;
 			left: 15%;
 			transform: translate(-50%, -50%);
@@ -45,7 +45,7 @@
 				color: $dark-color;
 			}
 			.first {
-				padding: 3em 1em;
+				padding: 0.85em 1em;
 				background-color: $dark-color;
 			}
 		}
@@ -64,12 +64,11 @@
 		background-position: center;
 	}
 
-	.contact{
-		&__boxes{
+	.contact {
+		&__boxes {
 			display: flex;
-			
 		}
-		&__box{
+		&__box {
 			padding-right: 3em;
 		}
 	}

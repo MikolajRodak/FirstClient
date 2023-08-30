@@ -17,7 +17,51 @@
 </head>
 
 <body>
-    <h1>podstrona</h1>
+
+    <nav class="nav">
+    <div class="nav__items">
+        <a href="#" class="nav__item">Home</a>
+        <a href="#aboutus" class="nav__item">O nas</a>
+        <a href="#offers" class="nav__item">Oferty</a>
+        <a href="../kontakt.html" class="nav__item">Kontakt</a>
+
+    </div>
+</nav>
+    <nav class="navdesktop">
+    <div class="navdesktop__logo"><i class="fa fa-solid fa-tree"></i>
+        <p>Forest</p>
+    </div>
+    <ul class="navdesktop__list">
+        <li class="listItem first"><a href="../index.html" style="color: #fff;">Home</a></li>
+        <li class="listItem"><a href="../index.html#aboutus">O nas</a></li>
+        <li class="listItem"><a href="#offers">Oferta</a></li>
+        <li class="listItem"><a href="../kontakt.html">Kontakt</a></li>
+    </ul>
+</nav>
+
+    <section class="contact pageContact section-padding">
+        <div class="wrapper">
+            <h2 class="section-title">contact <span>us</span></h2>
+
+
+            <form class="contact__form">
+                <div class="contact__form-box">
+                    <label for="name">your mail:</label>
+                    <input type="text" id="name">
+                </div>
+                <div class="contact__form-box">
+                    <label for="mail">Subject:</label>
+                    <input type="mail" id="name">
+                </div>
+                <div class="contact__form-box">
+                    <label for="msg">your message:</label>
+                    <textarea id="msg" cols="30" rows="10"></textarea>
+                </div>
+
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </section>
 </body>
 
 </html>

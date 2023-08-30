@@ -20,7 +20,7 @@ html {
 
 	&:focus {
 		outline: none;
-		border: 1px solid rgba(255, 255, 255, 0.5);
+		border: 1px solid $nav-outline;
 		border-radius: 8px;
 	}
 
@@ -58,15 +58,15 @@ html {
 
 .nav {
 	position: fixed;
-	top: 0;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
+	top: 0;
 	height: 100vh;
 	width: 100%;
-	background-color: #fff;
 	transform: translateX(100%);
+	background-color: $white;
 	transition: 0.5s cubic-bezier(0.65, 0.05, 0.36, 1);
 	z-index: 100;
 
@@ -238,6 +238,7 @@ html {
 			font-size: 1.3rem;
 		}
 		button {
+			position: relative;
 			width: 70%;
 			margin-top: 1em;
 			padding: 1em 2em;
@@ -247,6 +248,7 @@ html {
 			-webkit-box-shadow: 3px 9px 25px -8px rgba(66, 68, 90, 1);
 			-moz-box-shadow: 3px 9px 25px -8px rgba(66, 68, 90, 1);
 			box-shadow: 3px 9px 25px -8px rgba(66, 68, 90, 1);
+			overflow: hidden;
 		}
 		li {
 			padding: 0.15em 0;
@@ -312,6 +314,54 @@ html {
 		justify-content: center;
 		p {
 			font-size: 1rem;
+		}
+	}
+}
+
+.pageContact {
+	position: relative;
+	text-transform: capitalize;
+	.wrapper {
+		text-align: center;
+	}
+	h2 {
+		position: absolute;
+		text-align: center;
+		top: 3em;
+	}
+	.contact {
+		background-color: $green;
+		&__form {
+			padding-top: 5em;
+			input {
+				margin-bottom: 1em;
+				padding: 1em;
+				width: 100%;
+				background-color: $white;
+				border: 1px solid transparent;
+			}
+
+			textarea {
+				width: 100%;
+				border: 2px solid $dark-color;
+				border-radius: 8px;
+				padding: 0.3em;
+			}
+			button {
+				margin-top: 2em;
+				padding: 1em 3em;
+				border: 1px solid$dark-color;
+				background: none;
+				font-weight: bold;
+				cursor: pointer;
+				color: $dark-color;
+				transition: background-color 0.3s;
+
+				&:hover {
+					color: $white;
+					background-color: $green;
+				}
+			}
 		}
 	}
 }

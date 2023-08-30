@@ -116,4 +116,41 @@
 	&__link:hover::before {
 		transform: translateX(0%);
 	}
+
+	button::before,
+	::after {
+		position: absolute;
+		content: '';
+		width: 10%;
+		height: 55%;
+		transition: transform 0.5s;
+		z-index: -1;
+	}
+
+	button::before {
+		left: 0;
+		top: 0;
+		border-left: 2px solid $green;
+		border-top: 2px solid $green;
+	}
+	button::after {
+		bottom: 0;
+		right: 0;
+		border-right: 2px solid $green;
+		border-bottom: 2px solid $green;
+	}
+
+	button:hover {
+		overflow: visible;
+		z-index: 1;
+		cursor: pointer;
+	}
+	button:hover::before {
+		transform: translate(-20%, -20%);
+		z-index: 2;
+	}
+	button:hover::after {
+		transform: translate(20%, 20%);
+		z-index: 2;
+	}
 }
