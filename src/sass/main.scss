@@ -139,6 +139,24 @@ html {
 	background-size: cover;
 	background-position: bottom;
 
+	&__offersPage {
+		background-image: url(../../dist/img/lady-1822463_1920.mim.jpg);
+		background-size: cover;
+		background-position: center;
+		background-attachment: local;
+		background-repeat: no-repeat;
+		height: 100vh;
+	}
+
+	.scrollDown {
+		position: absolute;
+		font-size: 2.6rem;
+		bottom: 2em;
+		color: $white;
+		cursor: pointer;
+		z-index: 10;
+	}
+
 	&__shadow {
 		z-index: 1;
 		@include shadow;
@@ -364,4 +382,11 @@ html {
 			}
 		}
 	}
+}
+
+.span {
+	display: block;
+	text-align: center;
+	margin-top: 2em;
+	color: $green;
 }

@@ -4,6 +4,7 @@ const navItem = document.querySelectorAll('.nav__item')
 const navBtnBars = document.querySelector('.burger-btn__bars')
 const allSections = document.querySelectorAll('.section')
 const footerYear = document.querySelector('.footer__year')
+const scrollDown = document.querySelector('.scrollDown')
 
 const handleCurrentYear = () => {
 	const year = new Date().getFullYear()
@@ -50,5 +51,10 @@ const handleObserver = () => {
 	})
 }
 
+const scroll = () => {
+	window.scrollY.offsetTop = 200 + 'px'
+}
+
 handleCurrentYear()
 navBtn.addEventListener('click', handleNav)
+scrollDown.addEventListener('click', scroll)
