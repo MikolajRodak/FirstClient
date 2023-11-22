@@ -4,165 +4,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Forest Website</title>
+    <title>Title</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Montserrat:wght@400;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Montserrat:wght@400;700&family=Roboto:wght@300;400;700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
-        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="dist/hamburgers.css" rel="stylesheet">
     <link rel="stylesheet" href="../dist/css/main.mim.css">
 </head>
 
 <body>
 
-    <button class="burger-btn">
-        <div class="burger-btn__box">
-            <div class="burger-btn__bars"></div>
+    <div class="info-bar">
+        <div class="mobile">
+            <i class="fa-solid fa-mobile-screen-button"></i>(+48) 000 000 000
         </div>
-    </button>
+        <div class="mail">
+            <i class="fa-solid fa-envelope"></i>mail@example.com
+        </div>
+    </div>
 
     <nav class="nav">
-    <div class="nav__items">
-        <a href="#" class="nav__item">Home</a>
-        <a href="#aboutus" class="nav__item">O nas</a>
-        <a href="#offers" class="nav__item">Oferty</a>
-        <a href="../kontakt.html" class="nav__item">Kontakt</a>
+    <button class="hamburger burger-btn hamburger--spring " type="button">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
 
+    <div class="nav__hidden-menu">
+        <ul>
+            <a href="#">
+                <li>Home</li>
+            </a>
+            <a href="#aboutus">
+                <li>O nas</li>
+            </a>
+            <a href="offer">
+                <li>Oferta</li>
+            </a>
+            <a href="contact">
+                <li>Kontakt</li>
+            </a>
+            <a href="#Konsultacja">
+                <li>Bezpłatna konsultacja</li>
+            </a>
+        </ul>
     </div>
 </nav>
-    <nav class="navdesktop">
-    <div class="navdesktop__logo"><i class="fa fa-solid fa-tree"></i>
-        <a href="../index.html">
-            <p>Forest</p>
-        </a>
+    <nav class="nav-desktop">
+    <div class="nav-desktop__items">
+        <ul>
+            <a href="#">
+                <li>Home</li>
+            </a>
+            <a href="#aboutus">
+                <li>O nas</li>
+            </a>
+            <a href="offer">
+                <li>Oferta</li>
+            </a>
+            <a href="contact">
+                <li>Kontakt</li>
+            </a>
+            <a href="#Konsultacja">
+                <li>Bezpłatna konsultacja</li>
+            </a>
+        </ul>
     </div>
-    <ul class="navdesktop__list">
-        <li class="listItem first"><a href="../index.html" style="color: #fff;">Home</a></li>
-        <li class="listItem"><a href="../index.html#aboutus">O nas</a></li>
-        <li class="listItem"><a href="../index.html#offers">Oferta</a></li>
-        <li class="listItem"><a href="../kontakt.html">Kontakt</a></li>
-    </ul>
 </nav>
-
-    <header class="header">
-        <div class="header__shadow"></div>
-        <div class="header__texts">
-            <p class="header__text">Forest Group</p>
-            <h1 class="header__heading">Najpiękniejszy park w Twojej okolicy!</h1>
-        </div>
-    </header>
-
-    <main>
-        <section class="aboutus section section-padding white-section" id="aboutus">
-            <div class="wrapper">
-                <h2 class="section-heading">
-                    O nas
-                </h2>
-                <div class="aboutus__content">
-                    <img src="../dist/img/waters-3095682_1280.mim.jpg" alt="drzewo na małej wysepce na środku jeziora"
-                        class="aboutus__img">
-                    <div class="aboutus__texts">
-                        <h3 class="aboutus__heading">Niezapomniane przygody</h3>
-                        <p class="aboutus__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore eum
-                            omnis neque unde praesentium fugiat quis id! Asperiores a fugit dolorum, iste vero tenetur,
-                            quo id debitis exercitationem delectus harum. Aut expedita quasi nemo adipisci velit cum
-                            maiores debitis molestias eligendi iste, ullam quisquam mollitia. mrodak03@gmail.com</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="bar">
-            <div class="bar__shadow"></div>
-            <div class="bar__text">
-                <p class="header__text">Przygoda dla całej rodziny</p>
-            </div>
-        </section>
-
-        <section class="offers section section-padding white-section" id="offers">
-            <div class="wrapper">
-                <h2 class="section-heading">
-                    Oferta
-                </h2>
-                <p>Wybierz jedną z naszych wspaniałych ofert!</p>
-                <div class="offers__boxes">
-                    <div class="offers__box one">
-                        <div class="offers__box--title">Demo</div>
-                        <div class="offers__box--price">0$</div>
-                        <ul class="offers__box--desc">
-                            <li class="listItem"><i class="fa fa-solid fa-check"></i>opcja w pakiecie</li>
-                            <li class="listItem"><i class="fa fa-solid fa-check"></i>opcja w pakiecie</li>
-                            <li class="listItem"><i class="fa fa-solid fa-xmark"></i>opcja w pakiecie</li>
-                            <li class="listItem"><i class="fa fa-solid fa-xmark"></i>opcja w pakiecie</li>
-                            <li class="listItem"><i class="fa fa-solid fa-xmark"></i>opcja w pakiecie</li>
-                        </ul>
-                        <button class="offers__button">Wybierz</button>
-                    </div>
-                    <div class="offers__box two">
-                        <div class="offers__box--title">Standard</div>
-                        <div class="offers__box--price">99$</div>
-                        <ul class="offers__box--desc">
-                            <li class="listItem"><i class="fa fa-solid fa-check"></i>opcja w pakiecie</li>
-                            <li class="listItem"><i class="fa fa-solid fa-check"></i>opcja w pakiecie</li>
-                            <li class="listItem"><i class="fa fa-solid fa-check"></i>opcja w pakiecie</li>
-                            <li class="listItem"><i class="fa fa-solid fa-xmark"></i>opcja w pakiecie</li>
-                            <li class="listItem"><i class="fa fa-solid fa-xmark"></i>opcja w pakiecie</li>
-                        </ul>
-                        <button class="offers__button">Wybierz</button>
-                    </div>
-                    <div class="offers__box three">
-                        <div class="offers__box--title">Premium</div>
-                        <div class="offers__box--price">299$</div>
-                        <ul class="offers__box--desc">
-                            <li class="listItem"><i class="fa fa-solid fa-check"></i>opcja w pakiecie</li>
-                            <li class="listItem"><i class="fa fa-solid fa-check"></i>opcja w pakiecie</li>
-                            <li class="listItem"><i class="fa fa-solid fa-check"></i>opcja w pakiecie</li>
-                            <li class="listItem"><i class="fa fa-solid fa-check"></i>opcja w pakiecie</li>
-                            <li class="listItem"><i class="fa fa-solid fa-check"></i>opcja w pakiecie</li>
-                        </ul>
-                        <button class="offers__button">Wybierz</button>
-                    </div>
-                </div>
-
-                <div class="offers__link"><a href="../offersPackets.html">Więcej ofert -></a></div>
-
-            </div>
-        </section>
-
-        <footer class="contact section section-padding white-section" id="contact">
-            <div class="wrapper">
-                <div class="contact__logo"><i class="fa fa-solid fa-tree"></i>
-                    <p>Forest</p>
-                </div>
-                <div class="contact__boxes">
-                    <div class="contact__box">
-                        <h3>O nas</h3>
-                        <p>Historia</p>
-                        <p>Parki</p>
-                        <p>Opinie</p>
-                    </div>
-                    <div class="contact__box">
-                        <h3>Nasza firma</h3>
-                        <p>Praca</p>
-                        <p>Kadry</p>
-                        <p>Zarząd</p>
-                    </div>
-                    <div class="contact__box">
-                        <h3>Dokumenty</h3>
-                        <p>Wnioski</p>
-                        <p>Rezerwacje</p>
-                    </div>
-                </div>
-            </div>
-            <hr>
-            <div class="lastText">
-                <p>&copy;<span class="footer__year"></span> Forset Group Company Ltd.</p>
-            </div>
-    </main>
-
 
     <script src="../dist/js/main.mim.js"></script>
 </body>
